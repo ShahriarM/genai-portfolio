@@ -1,0 +1,39 @@
+{
+  "model": "gemma-4-e4b-it",
+  "prompt": "In one sentence, what is the single biggest risk of using a large language model to summarize loan documents?",
+  "runs": 10,
+  "results": {
+    "1.0": {
+      "answers": [
+        "The largest risk is that the model may hallucinate or misinterpret complex, nuanced legal clauses, leading to a misleading summary that results in inaccurate risk assessment or flawed compliance decisions.",
+        "The single biggest risk is that the model may hallucinate or misinterpret crucial contractual details, generating plausible but factually incorrect summaries that could lead to flawed underwriting or risk assessment decisions.",
+        "The greatest risk is the model's tendency to hallucinate or misinterpret critical legal and financial clauses, leading to inaccurate summaries that could result in flawed risk assessments or regulatory non-compliance.",
+        "The single biggest risk is the model generating convincing but factually incorrect or misleading summaries (hallucination) that misrepresent critical contractual terms, covenants, or financial obligations, leading to compliance or underwriting failure.",
+        "The greatest risk is *hallucination*\u2014the generation of plausible, yet factually inaccurate or entirely fabricated summaries\u2014which can lead to critical misinterpretations of terms, covenants, or financial obligations.",
+        "The biggest risk is **hallucination**, where the model generates convincing but factually incorrect summaries of critical details, covenants, or figures, leading to flawed risk assessment or compliance failure.",
+        "The biggest risk is the LLM generating \"hallucinations\"\u2014producing confident but factually inaccurate summaries or omitting critical, adverse details\u2014thereby leading to flawed risk assessments and potential misclassification of the underlying loan risk.",
+        "The single biggest risk is the model's potential to \"hallucinate\"\u2014generating false but highly convincing information\u2014leading to the misrepresentation of material covenants, repayment terms, or legal obligations contained within the documents.",
+        "The primary risk is the model generating plausible but factually incorrect summaries (hallucinations), which can lead to incorrect risk assessment and poor lending decisions.",
+        "The greatest risk is the model's potential to subtly introduce or amplify inaccuracies, leading to misrepresentation of critical loan terms and increased regulatory exposure."
+      ],
+      "distinct": 10,
+      "mean_similarity": 0.282
+    },
+    "0.0": {
+      "answers": [
+        "Hallucination can generate factually incorrect or misleading summaries, leading to flawed risk assessments, misidentification of key covenants, and potential compliance failures.",
+        "Hallucination can generate factually incorrect or misleading summaries, leading to flawed risk assessments, misidentification of key covenants, and potential compliance failures.",
+        "Hallucination can generate factually incorrect or misleading summaries, leading to flawed risk assessments, misidentification of key covenants, and potential compliance failures.",
+        "Hallucination can generate factually incorrect or misleading summaries, leading to flawed risk assessments, misidentification of key covenants, and potential compliance failures.",
+        "Hallucination can generate factually incorrect or misleading summaries, leading to flawed risk assessments, misidentification of key covenants, and potential compliance failures.",
+        "Hallucination can generate factually incorrect or misleading summaries, leading to flawed risk assessments, misidentification of key covenants, and potential compliance failures.",
+        "Hallucination can generate factually incorrect or misleading summaries, leading to flawed risk assessments, misidentification of key covenants, and potential compliance failures.",
+        "Hallucination can generate factually incorrect or misleading summaries, leading to flawed risk assessments, misidentification of key covenants, and potential compliance failures.",
+        "Hallucination can generate factually incorrect or misleading summaries, leading to flawed risk assessments, misidentification of key covenants, and potential compliance failures.",
+        "Hallucination can generate factually incorrect or misleading summaries, leading to flawed risk assessments, misidentification of key covenants, and potential compliance failures."
+      ],
+      "distinct": 1,
+      "mean_similarity": 1.0
+    }
+  }
+}

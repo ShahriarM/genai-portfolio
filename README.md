@@ -32,4 +32,5 @@ Create a `.env` file with `ANTHROPIC_API_KEY=...` (never committed).
 - [x] Week 0 — environment setup
 - [x] Week 1 — how LLMs work
 - [x] Week 2 — calling models from Python
-- [ ] Week 3 — prompting properly
+- [x] Week 3 — prompting properly
+- [ ] Week 4 — embeddings and similarity
