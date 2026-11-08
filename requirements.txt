@@ -120,3 +120,5 @@ sentence-transformers
 # CPU-only PyTorch: the default Linux wheel bundles several GB of CUDA libraries this machine can't use
 --extra-index-url https://download.pytorch.org/whl/cpu
 torch
+matplotlib
+pypdf
