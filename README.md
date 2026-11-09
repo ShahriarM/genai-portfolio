@@ -34,3 +34,4 @@ Create a `.env` file with `ANTHROPIC_API_KEY=...` (never committed).
 - [x] Week 2 — calling models from Python
 - [x] Week 3 — prompting properly
 - [x] Week 4 — embeddings and similarity
+- [x] Week 5 — RAG basics
