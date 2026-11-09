@@ -122,3 +122,4 @@ sentence-transformers
 torch
 matplotlib
 pypdf
+chromadb
