@@ -6,6 +6,7 @@ New documents for Week 5, downloaded on 2026-11-08 from the publishers' own site
 |---|---|---|---|
 | `SR11-7-guidance.pdf` | *Supervisory Guidance on Model Risk Management*, April 2011. The Federal Reserve and OCC guidance that SR 26-2 replaced | 21 | federalreserve.gov (`boarddocs/srletters/2011/sr1107a1.pdf`) |
 | `SR11-7-letter.pdf` | The SR 11-7 cover letter | 5 | federalreserve.gov (`boarddocs/srletters/2011/sr1107.pdf`) |
+| `SR2602-letter.pdf` | The SR 26-2 cover letter (April 17, 2026), which names the letters SR 26-2 supersedes: SR 11-7 and SR 21-8. Pages 1–2 of `../../week04/docs/SR2602.pdf`, extracted with pypdf on 2026-11-14 so the guidance text is not indexed twice | 2 | federalreserve.gov, via `week04/docs/SR2602.pdf` |
 | `Fed-2026-final-scenarios.pdf` | Federal Reserve final 2026 supervisory stress test scenarios (hypothetical recession, February 2026) | 42 | federalreserve.gov (`publications/files/2026-final-supervisory-stress-test-scenarios-20260204.pdf`) |
 | `Fed-2026-macro-model-guide.pdf` | Federal Reserve supervisory stress test documentation: final 2026 macroeconomic model guide | 69 | federalreserve.gov (`supervisionreg/files/2026-final-macroeconomic-model-guide.pdf`) |
 | `Fed-2026-global-market-shock.pdf` | Federal Reserve supervisory stress test documentation: final 2026 global market shock component | 85 | federalreserve.gov (`supervisionreg/files/2026-final-gms-model.pdf`) |
@@ -17,7 +18,7 @@ New documents for Week 5, downloaded on 2026-11-08 from the publishers' own site
 ## Notes
 
 - The Fed documents are the supervisor's own scenarios and model descriptions. The bank files are the company-run disclosures. They cover similar topics in different words, which suits retrieval tests.
-- SR 11-7 is superseded by SR 26-2, so questions about what SR 26-2 replaced can be answered from the corpus.
+- SR 11-7 is superseded by SR 26-2, and the SR 26-2 cover letter says so, so the corpus contains the answer to "What does SR 26-2 replace?". Whether search *finds* it is another matter: see `../../week06/README.md`.
 - The bank links are from the banks' investor-relations sites and may move. The files here are the copies used.
 - Text was checked with `pdftotext` and is selectable in every file, so no OCR is needed.
-- Total in the corpus with the three existing documents: 12 documents, about 175,000 words.
+- Total in the corpus with the three existing documents: 13 documents, about 175,000 words.
