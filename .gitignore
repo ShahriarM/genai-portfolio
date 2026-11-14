@@ -3,3 +3,4 @@
 scratch.py
 week03/prompt-eng-interactive-tutorial/
 week05/chroma_db/
+__pycache__/
