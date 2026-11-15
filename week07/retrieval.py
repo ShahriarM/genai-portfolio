@@ -87,14 +87,19 @@ class BM25Index:
         return [self.chunks[i] | {"score": float(scores[i])} for i in np.argsort(-scores)[:k]]
 
 
-def hybrid(*ranked_lists, k, c=60):
-    """Reciprocal rank fusion: each list votes 1/(c + rank) for its chunks; the top k by total win."""
+def hybrid(*ranked_lists, k, c=60, weights=None):
+    """Reciprocal rank fusion: each list votes weight/(c + rank) for its chunks; the top k by total win.
+
+    `weights` has one number per list (default: all 1, i.e. equal votes). A smaller `c` makes the
+    top ranks of each list count for more relative to the lower ranks.
+    """
+    weights = weights or [1.0] * len(ranked_lists)
     votes = {}
-    for hits in ranked_lists:
+    for w, hits in zip(weights, ranked_lists):
         for rank, h in enumerate(hits, start=1):
             key = (h["source"], h["chunk"])
             votes.setdefault(key, [0.0, h])
-            votes[key][0] += 1 / (c + rank)
+            votes[key][0] += w / (c + rank)
     merged = sorted(votes.values(), key=lambda v: -v[0])[:k]
     return [h | {"score": s} for s, h in merged]
 
