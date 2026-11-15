@@ -8,7 +8,7 @@ Deliverable: `results.md`, a table of retrieval hit rates per configuration, tre
 |---|---|
 | `questions.py` | The scoring set: the 12 answerable questions from Week 6, each with a regex for the phrase that answers it |
 | `retrieval.py` | Building blocks: document loading and chunking (Week 5 code with the size as a parameter), `VectorIndex`, `BM25Index`, `hybrid()` (reciprocal rank fusion), `hit_rate()`. Running it scores the Week 5 configuration |
-| `experiments.py` | The experiment grid: chunk size × overlap × k × search type. TODO |
+| `experiments.py` | The experiment grid: chunk size, overlap and k, one axis at a time, for vector, BM25 and hybrid search. Prints the rows for `results.md` |
 | `results.md` | The comparison table and what it shows |
 
 ## How a configuration is scored
