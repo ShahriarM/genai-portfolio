@@ -123,3 +123,4 @@ torch
 matplotlib
 pypdf
 chromadb
+streamlit

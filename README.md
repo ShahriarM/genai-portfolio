@@ -35,3 +35,4 @@ Create a `.env` file with `ANTHROPIC_API_KEY=...` (never committed).
 - [x] Week 3 — prompting properly
 - [x] Week 4 — embeddings and similarity
 - [x] Week 5 — RAG basics
+- [x] Week 6 — your first RAG app

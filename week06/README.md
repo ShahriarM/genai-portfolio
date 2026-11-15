@@ -7,10 +7,11 @@ Deliverable: `app.py`, a Streamlit app that answers questions about the model-ri
 | Path | Purpose |
 |---|---|
 | `rag.py` | Retrieval: `search(question, k=5)` over the Chroma index built in Week 5. Already working |
-| `app.py` | The app. Starter only: shows the search results. Generation, citations and the "not found" rule are TODO |
+| `answer.py` | Generation: `answer(question, k=5)` retrieves k chunks, sends them to the local server (qwen3-14b) with rules to answer only from them, cite `[n]`, and say "Not found in the documents." otherwise. Runs from the terminal too: `python answer.py "question"` |
+| `app.py` | The Streamlit page: question box, answer, the passages behind the citations, token counts. Sidebar slider sets how many passages to retrieve |
 | `test_questions.md` | The 15 test questions, with correct answers and the app's answers |
 
-The index lives in `../week05/chroma_db/` and is not committed. If it is missing, run `week05/rag_search.ipynb` from the top to rebuild it. Run the app from this folder: `streamlit run app.py`.
+The index lives in `../week05/chroma_db/` and is not committed. If it is missing, run `week05/rag_search.ipynb` from the top to rebuild it. Run the app from this folder with the venv active: `streamlit run app.py`. The local llama-server must be running with `qwen3-14b` loaded (`BASE_URL` and `MODEL` are at the top of `answer.py`).
 
 ## Steps (from the study plan)
 
